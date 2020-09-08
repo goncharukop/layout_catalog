@@ -1,6 +1,5 @@
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   width: 200px;
   background: #fff;
   border: 1px solid #f3f3f3;
@@ -27,7 +26,8 @@
   
   &__feedback,
   &__price {
-    display: flex;
+    display: grid;
+    grid-template-areas: "item-1 item-2";
     justify-content: space-between;
     margin-bottom: 20px;
   }

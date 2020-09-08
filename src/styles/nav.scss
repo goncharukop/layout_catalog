@@ -6,7 +6,9 @@
   font-weight: 500;
 
   &__list {
-    display: flex;
+    display: grid;
+    grid-template-areas: "1 2 3 4 5 6 7 8";
+    grid-gap: 20px;
     justify-content: left;
     align-items: center;
     height: $nav-height;
@@ -14,7 +16,6 @@
   
   &__item {
     position: relative;
-    margin-left: 20px;
     height: $nav-height;
 
     &:first-of-type {

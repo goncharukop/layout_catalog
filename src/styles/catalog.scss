@@ -1,6 +1,10 @@
 .catalog {
-  display: flex;
-  max-width: 1200px;
+  display: grid;
+  grid-template-areas: "card-1 card-2 card-3 card-4"
+    "card-5 card-6 card-7 card-8";
+  grid-column-gap: 48px;
+  grid-row-gap: 50;
+  grid-template-columns: repeat(4, 200px);
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
 }
